@@ -1,7 +1,9 @@
 <template>
   <div class="show-case flex column nowrap">
     <div>
-      <div v-if="item.prodImages == null" class="show-img">ImageNotFound</div>
+      <div v-if="item.prodImages == null" class="show-img">
+        ImageNotFound <br> (item.prodImages == null)
+      </div>
       <div v-else class="show-img">
         <img :src="require('@/assets/karma-kirmizi.png')" alt="" />
       </div>
@@ -25,9 +27,27 @@
       </div>
       <div class="inf flex nowrap justify-around">
         <div>
-          <div><q-btn v-ripple:primary round flat icon="highlight_off" title="Sepete Ekle" /></div>
-          <div><q-btn v-ripple:primary round flat icon="favorite" title="Favoriye Ekle" /></div>
-          <div><q-btn v-ripple:primary round flat icon="tune" title=" Ayarlar" /></div>
+          <div>
+            <q-btn
+              v-ripple:primary
+              round
+              flat
+              icon="highlight_off"
+              title="Sepete Ekle"
+            />
+          </div>
+          <div>
+            <q-btn
+              v-ripple:primary
+              round
+              flat
+              icon="favorite"
+              title="Favoriye Ekle"
+            />
+          </div>
+          <div>
+            <q-btn v-ripple:primary round flat icon="tune" title=" Ayarlar" />
+          </div>
         </div>
         <div>
           <q-btn
