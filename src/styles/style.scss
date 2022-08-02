@@ -4,11 +4,46 @@
   background-color: $b;
   color: $t;
 }
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+* {
+  transition: 0.2s;
+}
+address {
+  display: inline;
+}
+@media (max-width: 1000px) {
+  .ds {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media (min-width: 1000px) {
+  .mb {
+    display: none !important;
+    visibility: hidden;
+  }
+}
 .svg-social {
-  margin: 10px 10px;
-  svg {
+  margin: 10px 0px;
+  .q-avatar,
+  .q-avatar * {
+    width: 30px !important;
+    max-width: 30px !important;
+    min-width: 30px !important;
+    height: 30px !important;
+  }
+  a {
+    margin: 0px 10px;
     height: inherit;
     width: inherit;
+    svg,
+    svg * {
+      height: inherit;
+      width: inherit;
+    }
   }
 }
 .bg-bar {
@@ -44,7 +79,6 @@
 .search {
   width: 50%;
   display: flex;
-  flex-direction: row-reverse;
   flex-wrap: wrap;
   .q-field {
     margin: 0px;
@@ -73,7 +107,7 @@
   overflow: hidden;
   width: 250px;
   border: solid 1px $secondary;
-  margin: 5px;
+  margin: 10px;
   > div:nth-of-type(1) {
     background-color: $accent;
   }
@@ -111,7 +145,33 @@
     display: block;
   }
 }
-
 body.desktop .q-hoverable:hover > .q-focus-helper {
   background: $primary;
+}
+
+.footer {
+  & > div {
+    width: 20%;
+    height: 100%;
+    min-height: 200px;
+    padding: 5px;
+  }
+  @media (max-width: 1100px) {
+    & > div {
+      width: 25%;
+    }
+    & > div:last-child {
+      width: 100%;
+    }
+  }
+  @media (max-width: 800px) {
+    & > div {
+      width: 50%;
+    }
+  }
+  address,
+  span:not(.text-h5) {
+    color: $secondary;
+    line-height: 2pc;
+  }
 }

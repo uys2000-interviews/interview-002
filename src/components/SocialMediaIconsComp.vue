@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-bar flex q-px-xl">
-    <a href="#facebook" target="_blank" class="svg-social">
+  <div class="svg-social">
+    <a href="#facebook" target="_blank">
       <q-avatar size="xs" square>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
           <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -10,7 +10,7 @@
         </svg>
       </q-avatar>
     </a>
-    <a href="#twitter" target="_blank" class="svg-social">
+    <a href="#twitter" target="_blank">
       <q-avatar size="xs" square>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -20,7 +20,7 @@
         </svg>
       </q-avatar>
     </a>
-    <a href="#youtube" target="_blank" class="svg-social">
+    <a href="#youtube" target="_blank">
       <q-avatar size="xs" square>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
           <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -30,7 +30,7 @@
         </svg>
       </q-avatar>
     </a>
-    <a href="#instagram" target="_blank" class="svg-social">
+    <a href="#instagram" target="_blank">
       <q-avatar size="xs" square>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -40,8 +40,5 @@
         </svg>
       </q-avatar>
     </a>
-    <q-space />
-    <q-btn dense no-caps flat class="bar-btn no-radius" label="Yardım" />
-    <q-btn dense no-caps flat class="bar-btn no-radius bg-bt-main" label="Blog" />
   </div>
 </template>

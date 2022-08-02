@@ -1,5 +1,5 @@
 <template>
-  <q-page-sticky expand position="top">
+  <q-page-sticky class="ds" expand position="top">
     <q-toolbar class="bg-primary text-white">
       <q-btn
         v-for="item in menus"
