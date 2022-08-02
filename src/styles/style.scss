@@ -105,8 +105,10 @@ address {
       width: 100%;
     }
   }
-  & > div:last-child {
-    width: 100%;
+  @media (max-width: 800px) {
+    & > div:last-child {
+      width: 100%;
+    }
   }
 }
 .text-bread {
