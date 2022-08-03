@@ -93,7 +93,6 @@ export default {
       getToken(this.setToken);
     },
     setProducts: function (response) {
-      console.log(response);
       this.items = response.data;
     },
     getProducts: function () {

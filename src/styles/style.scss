@@ -4,16 +4,6 @@
   background-color: $b;
   color: $t;
 }
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-* {
-  transition: 0.2s;
-}
-address {
-  display: inline;
-}
 @media (max-width: 1000px) {
   .ds {
     display: none !important;
@@ -46,31 +36,19 @@ address {
     }
   }
 }
-.bg-bar {
-  @include bg($b: $accent, $t: $secondary);
-  path {
-    fill: $secondary;
-  }
-}
-.bg-bt-main {
-  @include bg($b: $primary, $t: white);
-}
 .bar-btn {
   height: 50px;
   width: 75px;
   font-size: 1.1pc;
 }
-.bg-header {
-  @include bg($b: white, $t: black);
-  .logo {
-    width: 20vw;
-    height: auto;
-    @media (max-width: 1000px) {
-      width: 30vw;
-    }
-    @media (max-width: 800px) {
-      width: 40vw;
-    }
+.logo {
+  width: 20vw;
+  height: auto;
+  @media (max-width: 1000px) {
+    width: 30vw;
+  }
+  @media (max-width: 800px) {
+    width: 40vw;
   }
 }
 .no-radius {
@@ -245,5 +223,8 @@ body.desktop .q-hoverable:hover > .q-focus-helper {
   span:not(.text-h5) {
     color: $secondary;
     line-height: 2pc;
+  }
+  .q-btn > span {
+    color: inherit;
   }
 }

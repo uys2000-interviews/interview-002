@@ -31,7 +31,11 @@
       <br /><q-separator /><br />
       <q-form class="search full-width" @submit="() => ''">
         <q-input filled class="no-radius" label="Ne Aramıştınız..." />
-        <q-btn icon="search" type="submit" class="bg-bt-main no-radius" />
+        <q-btn
+          icon="search"
+          type="submit"
+          class="bg-primary text-white no-radius"
+        />
       </q-form>
       <br /><q-separator /><br />
       <div>

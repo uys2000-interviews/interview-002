@@ -1,5 +1,5 @@
 <template>
-  <q-header reveal class="bg-header">
+  <q-header reveal class="bg-white text-black">
     <slot />
     <q-toolbar>
       <q-btn flat class="mb" icon="menu" @click="setDrawer(true)" />
@@ -9,7 +9,7 @@
       </q-avatar>
       <q-form class="search ds" @submit="() => ''">
         <q-input filled class="no-radius" label="Ne Aramıştınız..." />
-        <q-btn icon="search" type="submit" class="bg-bt-main no-radius" />
+        <q-btn icon="search" type="submit" class=" bg-primary text-white no-radius" />
       </q-form>
       <q-space />
       <q-btn-dropdown no-caps flat class="bg-white text-black ds">

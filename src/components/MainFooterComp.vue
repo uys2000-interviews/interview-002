@@ -75,7 +75,7 @@
         <div>
           <q-form class="search full-width" @submit="() => ''">
             <q-input filled class="no-radius" label="E-Mail Adresiniz" />
-            <q-btn icon="east" type="submit" class="bg-bt-main no-radius" />
+            <q-btn icon="east" type="submit" class=" bg-primary text-white no-radius" />
           </q-form>
         </div>
       </div>
